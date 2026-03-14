@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trending Topic Generator</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+margin-top:100px;
+background:#f4f4f4;
+}
+#topic{
+font-size:28px;
+font-weight:bold;
+color:#333;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Random Trending Topic</h2>
+
+<div id="topic"></div>
+
+<script>
+
+const topics = [
+
+"Artificial Intelligence news",
+"Machine learning applications",
+"Deep learning technology",
+"Latest smartphone technology",
+"Future of robotics",
+"Quantum computing research",
+"Cloud computing platforms",
+"Cybersecurity updates",
+"Blockchain technology trends",
+"Data science applications",
+"Virtual reality gaming",
+"Augmented reality devices",
+"5G network expansion",
+"Smart home technology",
+"Internet of Things devices",
+
+"Electric vehicle innovation",
+"Renewable energy technology",
+"Solar energy future",
+"Wind energy projects",
+"Battery technology advancements",
+
+"NASA space missions",
+"Mars exploration missions",
+"SpaceX rocket launches",
+"Space tourism industry",
+"Future space colonies",
+
+"Stock market trends",
+"Global economic outlook",
+"Cryptocurrency market trends",
+"Bitcoin price predictions",
+"Ethereum blockchain updates",
+
+"Startup funding news",
+"Tech startup ecosystem",
+"Venture capital investments",
+"Entrepreneurship ideas",
+"Business innovation trends",
+
+"Online education platforms",
+"E learning technology",
+"Programming tutorials",
+"Best coding languages",
+"Software development trends",
+
+"Web development frameworks",
+"JavaScript ecosystem updates",
+"Python programming trends",
+"Mobile app development",
+"Open source software news",
+
+"Digital marketing strategies",
+"SEO optimization techniques",
+"Social media marketing",
+"Content creator economy",
+"YouTube creator trends",
+
+"Streaming platform competition",
+"Netflix original series",
+"Disney plus new shows",
+"Hollywood movie releases",
+"Film industry news",
+
+"Gaming industry news",
+"New gaming consoles",
+"Esports tournament news",
+"Online multiplayer games",
+"Game development engines",
+
+"Football world news",
+"Cricket international matches",
+"Olympics sports updates",
+"Tennis championship results",
+"Formula 1 racing news",
+
+"Healthy lifestyle tips",
+"Nutrition science research",
+"Fitness workout trends",
+"Mental health awareness",
+"Yoga and meditation",
+
+"Travel destinations 2026",
+"Adventure tourism ideas",
+"Luxury travel experiences",
+"Budget travel tips",
+"Cultural tourism trends",
+
+"Food technology innovation",
+"Plant based food industry",
+"Restaurant business trends",
+"Street food culture",
+"Healthy diet plans",
+
+"Fashion industry trends",
+"Sustainable fashion brands",
+"Luxury fashion houses",
+"Streetwear culture",
+"Fashion week highlights",
+
+"Artificial general intelligence research",
+"Autonomous vehicle technology",
+"Self driving car innovation",
+"Smart city infrastructure",
+"Digital transformation strategies",
+
+"Online privacy protection",
+"Data protection laws",
+"Cyber attack prevention",
+"Hacking techniques awareness",
+"Internet safety tips",
+
+"Future transportation systems",
+"Hyperloop transportation",
+"Electric aircraft technology",
+"Drone delivery systems",
+"Urban mobility solutions",
+
+"Climate change research",
+"Global warming solutions",
+"Environmental conservation",
+"Wildlife protection programs",
+"Ocean pollution solutions",
+
+"3D printing technology",
+"Biotechnology innovations",
+"Medical technology breakthroughs",
+"Genetic engineering research",
+"Nanotechnology applications",
+
+"Remote work technology",
+"Hybrid workplace models",
+"Freelancing economy",
+"Productivity apps",
+"Collaboration tools",
+
+"Smartphone camera technology",
+"Foldable smartphone trends",
+"Mobile processor innovation",
+"Android updates",
+"iOS new features",
+
+"Smartwatch technology",
+"Wearable fitness devices",
+"Health monitoring gadgets",
+"Sleep tracking technology",
+"Digital health apps",
+
+"Online shopping trends",
+"E commerce business models",
+"Digital payment systems",
+"Fintech innovations",
+"Mobile banking technology",
+
+"Artificial intelligence in healthcare",
+"AI medical diagnosis",
+"Telemedicine technology",
+"Healthcare robotics",
+"Hospital management systems",
+
+"University research discoveries",
+"Scientific breakthroughs",
+"Physics research news",
+"Chemistry innovations",
+"Biology discoveries",
+
+"Photography techniques",
+"Drone photography trends",
+"Digital camera technology",
+"Video production tools",
+"Film making techniques",
+
+"Graphic design inspiration",
+"UI UX design trends",
+"Creative digital art",
+"Animation technology",
+"Motion graphics design",
+
+"Podcast industry growth",
+"Audio streaming platforms",
+"Music production software",
+"Electronic music trends",
+"Independent artists promotion",
+
+"Book publishing industry",
+"Best selling novels",
+"Online reading platforms",
+"Educational books trends",
+"Digital libraries",
+
+"Space telescope discoveries",
+"Astronomy research updates",
+"Black hole discoveries",
+"Galaxy exploration news",
+"Cosmology theories",
+
+"Renewable energy startups",
+"Green technology innovation",
+"Carbon neutral strategies",
+"Energy storage solutions",
+"Hydrogen fuel technology",
+
+"Artificial intelligence ethics",
+"Future of work automation",
+"Human robot collaboration",
+"AI creativity tools",
+"Machine intelligence future"
+
+];
+
+// generate random topic
+function randomTopic(){
+
+ const topic = topics[Math.floor(Math.random()*topics.length)];
+
+ document.getElementById("topic").innerText = topic;
+
+}
+
+// auto run
+randomTopic();
+
+</script>
+
+</body>
+</html>
